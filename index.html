@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Art NFT Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 20px;
+        }
+        canvas {
+            border: 1px solid black;
+        }
+        input {
+            margin-bottom: 20px;
+            padding: 10px;
+            font-size: 16px;
+            width: 300px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pixel Art NFT Generator</h1>
+    <input type="text" id="walletAddress" placeholder="Enter Ethereum Address" style="margin-bottom: 20px; padding: 10px; font-size: 16px;">
+    <br>
+    <canvas id="pixelArtCanvas" width="1024" height="1024"></canvas>
+    <br>
+    <button onclick="generatePixelArt()">Generate Art</button>
+    <button onclick="downloadImage()">Download Image</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
